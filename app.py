@@ -6,7 +6,9 @@ from io import BytesIO
 from src.features.preprocess import preprocess
 from src.models.train import train_model
 
-st.set_page_config(page_title="Customer Churn Prediction", layout="wide")
+st.set_page_config(page_title="My Customer Prediction Model", layout="wide")
+st.title("📊 My Customer Prediction Model")
+
 
 if "df" not in st.session_state:
     st.session_state.df = None
@@ -15,7 +17,7 @@ if "model" not in st.session_state:
 if "feature_importance" not in st.session_state:
     st.session_state.feature_importance = None
 
-menu = st.sidebar.radio("📌 Navigate", ["Upload Data", "Clean Data", "Analytics Dashboard", "Train Model"])
+menu = st.sidebar.radio("📌 Navigate", ["Upload Data", "Clean Data", "Analytics Dashboard", "Predict Customers"])
 
 # -------------------
 # Upload Data

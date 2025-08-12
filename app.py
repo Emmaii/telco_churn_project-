@@ -6,8 +6,8 @@ from io import BytesIO
 from src.features.preprocess import preprocess
 from src.models.train import train_model
 
-st.set_page_config(page_title="My Customer Prediction Model", layout="wide")
-st.title("📊 My Customer Prediction Model")
+st.set_page_config(page_title="Customer Prediction Model", layout="wide")
+st.title("📊 Customer Prediction Model")
 
 
 if "df" not in st.session_state:
